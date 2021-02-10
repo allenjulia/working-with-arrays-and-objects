@@ -22,7 +22,10 @@ var carDetails = {
 */
 
 //Code Here
-
+const {color} = carDetails;
+const {make} = carDetails;
+const {model} = carDetails;
+const {year} = carDetails
 
 
 ////////// PROBLEM 2 //////////
@@ -35,7 +38,9 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName} = obj;
+  let {lastName} = obj;
+  let {title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,7 +59,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let totalPopulation = obj =>{
+  let {utah} = obj;
+  let {california} = obj;
+  let {texas} = obj;
+  let {arizona} = obj;
+  return utah + california + texas + arizona
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -68,7 +79,12 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let ingredients = obj => {
+  let {carb} = obj;
+  let {fat} = obj;
+  let {protein} = obj;
+  return ingredientsArr = [carb, fat, protein]
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +102,21 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let largeNumbers = ( {first, second, third}) => {
+  if(first < second){
+    if (second < third){
+      return first
+    }
+    if(third < first){
+      return third
+    }
+  }
+  if(second < first){
+    if(second < third){
+      return second
+    }
+  }
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +128,39 @@ function greeting( obj ) {
 */
 
 //Code Here
+let numberGroups = ({a, b, c}) => {
+  if(a.length > b.length){
+    if(a.length > c.length){
+      return a
+    }
+  }
+  if(b.length > a.length){
+    if(b.length > c.length){
+      return b
+    }
+  }
+  if(c.length > a.length){
+    if(c.length > b.length){
+      return c
+    }
+  }
+}
 
+// let numberGroups = ({a, b, c}) => {
+//   if(a.length-1 > b.length-1){
+//     if(a.length-1 > c.length-1){
+//       return a
+//     }
+//   }
+//   if(b.length-1 > a.length-1){
+//     if(b.length-1 > c.length-1){
+//       return b
+//     }
+//   }
+//   if(c.length-1 > a.length-1){
+//     if(c.length-1 > b.length-1){
+//       return c
+//     }
+//   }
+// }
 

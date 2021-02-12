@@ -177,7 +177,7 @@ for(let key in deleteTheBigNumbers){
 
 let startsWithK = obj => {
   for(let key in obj){
-    if(key.includes('k')){
+    if(key.startsWith('k')){
       delete obj[key]
     }
   }
